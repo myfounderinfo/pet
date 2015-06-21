@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="@color/title_bg"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="5月20日"
+                    android:id="@+id/number"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_medium" />
+
+            <RelativeLayout
+                android:id="@+id/edit_phone_number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back_histroy"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="5dp" >
+
+ <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+            
+     </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/icon_iv"
+                    android:text="7.5km"
+                    android:id="@+id/run_distance"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:id="@+id/pet_circle_fav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableLeft="@drawable/fav_d"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="@color/txt_dark_gray"
+                    android:textSize="@dimen/text_size_medium" />
+            </RelativeLayout>
+           
+        </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:background="@color/white">
+<RelativeLayout 
+    android:id="@+id/titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_height"
+    android:background="@color/white"
+    android:minHeight="@dimen/actionbar_height"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:src="@drawable/back_imagae" />
+
+	<TextView
+	    android:id="@+id/location_info_tv"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:text="分享商家"
+	    android:textColor="@android:color/white"
+	    android:textSize="18sp" />
+
+</RelativeLayout>
+   <LinearLayout
+       android:id="@+id/content_layout"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:background="#EFEFEF"
+       android:orientation="vertical" >
+
+	<LinearLayout
+	    android:id="@+id/content_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="2dip"
+	    android:layout_marginLeft="2dp"
+	    android:layout_marginRight="2dp"
+	    android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/kongjian"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:src="@drawable/logo_qzone" />
+
+	    <ImageView
+            android:id="@+id/pengyouquan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:scaleType="fitCenter"
+            android:background="#ffffff"
+             android:layout_weight="1"
+            android:src="@drawable/logo_wechatmoments"
+            />
+	    <ImageView
+            android:id="@+id/qq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#ffffff"
+            android:src="@drawable/logo_qq"
+             android:layout_weight="1"
+             />
+    </LinearLayout>
+	<LinearLayout
+	    android:id="@+id/content_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="2dip"
+	    android:layout_marginLeft="2dp"
+	    android:layout_marginRight="2dp"
+	    android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/tengyun"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:src="@drawable/logo_tencentweibo" />
+
+	    <ImageView
+            android:id="@+id/weixin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#ffffff"
+             android:layout_weight="1"
+            android:src="@drawable/logo_wechat"
+            />
+	    <ImageView
+            android:id="@+id/xinglang"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#ffffff"
+            android:src="@drawable/logo_sinaweibo"
+             android:layout_weight="1"
+             />
+	    <ImageView
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#ffffff"
+            android:src="@drawable/logo_email"
+             android:layout_weight="1"
+             />
+    </LinearLayout>
+    </LinearLayout>
+
+      
+    </LinearLayout>

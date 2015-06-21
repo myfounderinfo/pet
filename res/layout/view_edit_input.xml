@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    >
+    <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center_vertical"
+        >
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_margin="10dip"
+            >
+            <ImageView                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_edit_icon"
+                android:src="@drawable/icon_phone"
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_title"
+                android:textColor="@color/txt_gray"
+                android:textSize="@dimen/text_size_large"
+                />
+            
+        </LinearLayout>
+        <View 
+            android:layout_width="1dip"
+            android:layout_height="30dip"
+            android:background="@color/bg_main"
+            android:layout_marginRight="10dip"
+            />
+        <RelativeLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"                   
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_password_hidn"
+                android:layout_alignParentRight="true"
+                android:id="@+id/img_edit_right_icon"
+                android:layout_marginLeft="5dip"
+          		android:layout_marginRight="5dip"
+          		android:visibility="gone"
+                />
+            <EditText 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:singleLine="true"
+                android:layout_toLeftOf="@+id/img_edit_right_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="10dip"
+                android:textSize="@dimen/text_size_large"
+                android:textColor="@color/black"
+                android:id="@+id/edit_content"
+                />
+            
+        </RelativeLayout>
+        
+        
+        
+    </LinearLayout>
+
+</LinearLayout>

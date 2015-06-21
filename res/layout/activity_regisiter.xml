@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_main"
+     >
+   <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:layout_marginTop="10dip"
+        >
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    android:id="@+id/edit_phone_number"
+    >
+    <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center_vertical"
+        >
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_margin="10dip"
+            >
+           
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_title"
+                android:textColor="@color/txt_gray"
+                android:textSize="@dimen/text_size_large"
+                android:text="中国+86"
+                />
+            
+        </LinearLayout>
+        <View 
+            android:layout_width="1dip"
+            android:layout_height="30dip"
+            android:background="@color/bg_main"
+            android:layout_marginRight="10dip"
+            />
+        <RelativeLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"                   
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_blue"
+                android:layout_alignParentRight="true"
+                android:id="@+id/txt_send_sms_code"
+                android:layout_marginLeft="5dip"
+          		android:layout_marginRight="5dip"
+          		android:text="发送验证码"
+          		android:layout_centerVertical="true"
+                />
+            <EditText 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:singleLine="true"
+                android:layout_toLeftOf="@+id/txt_send_sms_code"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="10dip"
+                android:textSize="@dimen/text_size_large"
+                android:textColor="@color/black"
+                android:id="@+id/edit_content"
+                android:inputType="phone"
+                />
+            
+        </RelativeLayout>
+        
+        
+        
+    </LinearLayout>
+
+</LinearLayout>
+
+        <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:background="@color/bg_main"
+        android:layout_below="@+id/edit_phone_number"
+        android:id="@+id/view_integral_line"
+        />
+          <com.globalLibrary.view.EditInputView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/edit_sms_code"
+           android:layout_below="@+id/view_integral_line"
+           />
+       
+          <LinearLayout 
+         android:layout_width="240dip"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:background="@drawable/btn_normal_green_normal"
+         android:gravity="center"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="20dip"
+         android:id="@+id/lay_btn_next"
+         android:layout_below="@+id/edit_sms_code"
+         >
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="下一步"
+             android:textColor="@color/white"
+             android:textSize="@dimen/text_size_large"
+             android:layout_marginTop="8dip"
+             android:layout_marginBottom="8dip"
+             />
+         
+     </LinearLayout>
+     
+          <LinearLayout 
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_alignParentBottom="true"
+              android:layout_centerHorizontal="true"
+              android:layout_marginBottom="30dip"
+              android:layout_marginLeft="10dip"
+              android:layout_marginRight="10dip"
+              >
+              <LinearLayout 
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:id="@+id/lay_agree_user_protocol"
+                  >
+                  <CheckBox 
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      style="@style/CustomAgreeCheckboxTheme"
+                      android:id="@+id/cb_agree_user_protocol"
+                      />
+                  <TextView 
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="我已阅读并同意使用条款和隐私政策"
+                      android:textSize="@dimen/text_size_small"
+                      android:textColor="@color/txt_dark_gray"
+                      />
+              </LinearLayout>
+               <LinearLayout 
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:id="@+id/lay_agree_funds_protocol"
+                  >
+                   <CheckBox 
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      style="@style/CustomAgreeCheckboxTheme"
+                      android:id="@+id/cb_agree_funds_protocol"
+                      />
+                  <TextView 
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="我同意成为它基金会的免费会员"
+                      android:textSize="@dimen/text_size_small"
+                      android:textColor="@color/txt_dark_gray"
+                      />
+                  
+              </LinearLayout>
+              
+              
+          </LinearLayout>
+   </RelativeLayout>
+
+</LinearLayout>

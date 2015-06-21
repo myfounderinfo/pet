@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <color name="highlight">#fc6f05</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#222222</color>
+    <color name="transfer">#00000000</color>
+    <color name="title_bg">#fcfcfc</color>
+    <color name="txt_black">#222222</color>
+    <color name="txt_gray">#999999</color>
+    <color name="txt_blue">#12b5b0</color>
+    <color name="bg_main">#e9e9e9</color>
+    <color name="txt_dark_gray">#666666</color>
+     <color name="sliding_menu_item_down">#ff39393b</color>
+    <color name="sliding_menu_item_release">#00000000</color>
+    <color name="sliding_menu_background">#ff2c2c2e</color>
+    <color name="sliding_menu_body_background">#fff5f5f5</color>
+</resources>

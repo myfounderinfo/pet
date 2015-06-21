@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="3dp"
+        android:id="@+id/layout_one"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/friend_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:singleLine="true"
+            android:text="356.365KM"
+            android:textColor="@color/txt_blue"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:singleLine="true"
+            android:text="总里程"
+            android:textColor="@color/txt_dark_gray"
+            android:textSize="@dimen/text_size_large" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/layout_two"
+        android:layout_below="@+id/layout_one"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="29"
+                android:id="@+id/work_dog_count"
+                android:textColor="@color/txt_black"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="总遛狗次数"
+                android:textColor="@color/txt_dark_gray"
+                android:textSize="@dimen/text_size_large" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="0dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="16:32"
+                android:id="@+id/work_dog_mast_long"
+                android:textColor="@color/txt_black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="单次最长"
+                android:textColor="@color/txt_dark_gray"
+                android:textSize="@dimen/text_size_large" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="0dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="3th"
+                android:id="@+id/work_dog_frsit_sort"
+                android:textColor="@color/txt_black"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="最好排行"
+                android:textColor="@color/txt_dark_gray"
+                android:textSize="@dimen/text_size_large" />
+        </LinearLayout>
+    </LinearLayout>
+    
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_four"
+            android:background="#FFEFCC"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:padding="10dp" >
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="你的好友小刘，今天完成了6.5KM"
+                android:id="@+id/new_info_tv"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/txt_dark_gray"
+                android:textSize="@dimen/text_size_medium" />
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_bottom_info"
+            android:background="#FFEFCC"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="gone"
+           >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="查看排行榜"
+                android:id="@+id/check_sort_info_tv"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/txt_dark_gray"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="分享成绩"
+                 android:id="@+id/share_info_tv"
+                android:textColor="@color/txt_dark_gray"
+                android:textSize="@dimen/text_size_large" />
+        </LinearLayout>
+        
+</LinearLayout>
+
+       <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/layout_two"
+        android:layout_above="@+id/layout_four"
+        android:orientation="horizontal" >
+            <RelativeLayout
+        android:layout_width="wrap_content"
+         android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_work_dog"
+        android:padding="10dp"
+        android:orientation="horizontal" >
+             <RelativeLayout
+        android:layout_width="120dp"
+         android:layout_centerInParent="true"
+        android:layout_height="120dp"
+        android:id="@+id/start_work_dog_layout"
+         android:background="@drawable/bg_work_dog_iv"
+        android:orientation="horizontal" >
+        
+       <ImageView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+          android:layout_centerInParent="true"
+          android:id="@+id/iv"
+         android:src="@drawable/work_dog"
+         /> 
+         
+       <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv"
+                android:singleLine="true"
+                android:text="开始遛狗"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_medium" />
+         </RelativeLayout>
+         </RelativeLayout>
+         </RelativeLayout>
+</RelativeLayout>

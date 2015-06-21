@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_main"
+     >
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="200dip"
+        android:background="@drawable/ic_login_logo"
+        
+        />
+    <com.globalLibrary.view.EditInputView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_phone"
+        />
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:background="@color/bg_main"
+        />
+       <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+     <com.globalLibrary.view.EditInputView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:id="@+id/edit_pwd"/>
+     </FrameLayout>
+     
+     <LinearLayout 
+         android:layout_width="240dip"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:background="@drawable/btn_normal_green_normal"
+         android:gravity="center"
+         android:layout_gravity="center"
+         android:layout_marginTop="20dip"
+         android:id="@+id/lay_btn_login"
+         >
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="登陆"
+             android:textColor="@color/white"
+             android:textSize="@dimen/text_size_large"
+             android:layout_marginTop="8dip"
+             android:layout_marginBottom="8dip"
+             />
+         
+     </LinearLayout>
+
+     <TextView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="注册账号"
+         android:textColor="@color/txt_dark_gray"
+         android:textSize="@dimen/text_size_medium"
+         android:layout_gravity="bottom|center"
+         android:layout_marginTop="50dip"
+         android:id="@+id/lay_txt_regisiter"
+         />
+    
+</LinearLayout>

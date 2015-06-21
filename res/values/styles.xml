@@ -1,0 +1,17 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+      <style name="main_CustomWindowTitleBackground">
+        <item name="android:background">@color/highlight</item>
+    </style>
+     <style name="Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+	<style name="main_title_style" parent="Transparent">
+        <item name="android:windowTitleSize">@dimen/title_height</item>
+        <item name="android:windowTitleBackgroundStyle">@style/main_CustomWindowTitleBackground</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+     <style name="AppTheme" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>
